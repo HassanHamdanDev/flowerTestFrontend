@@ -10,11 +10,11 @@ class Header extends React.Component {
   render() {
     const { isAuthenticated } = this.props.auth0;
 
-    return(
+    return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand>My Favorite Fruits</Navbar.Brand>
         <Link to="/">Home </Link>
-        <Link to="/favFruit"> Fav-Fruits</Link>
+        {isAuthenticated && <Link to="/favFruit"> Fav-Fruits</Link>}
         {isAuthenticated ? <LogoutButton /> : <LoginButton />}
       </Navbar>
     );

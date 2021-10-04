@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class FavFruit extends React.Component {
+class FavFlower extends React.Component {
   render() {
-    return(
+    return (
       <>
         <h1>My Favorite Fruits</h1>
       </>
@@ -11,4 +11,4 @@ class FavFruit extends React.Component {
   }
 }
 
-export default FavFruit;
+export default FavFlower;
